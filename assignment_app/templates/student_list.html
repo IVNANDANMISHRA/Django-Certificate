@@ -1,0 +1,16 @@
+<!-- assignment_app/templates/student_list.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student List</title>
+</head>
+<body>
+    <h1>Student List</h1>
+    <ul>
+        {% for student in students %}
+            <li>{{ student.name }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

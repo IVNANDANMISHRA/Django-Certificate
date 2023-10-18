@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Teachers</title>
+</head>
+<body>
+    <h1>Teachers</h1>
+    <ul>
+        {% for teacher in teachers %}
+            <li>{{ teacher.name }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'show_data' student.id 0 %}">Show Student</a>
+</body>
+</html>
